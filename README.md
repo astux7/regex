@@ -8,8 +8,9 @@ some nice regex to extract info
 ```ruby
 /<li>(.*?)<\/li>/i
 ```
+
++ Extracting data from RRS feed (link path, images ...)
 ```php
- /* --- replace img tag --- */
   preg_match_all('#<\s*img [^\>]*src\s*=\s*(["\'])((.*?))\1#im', $text, $fromimg);
   $text = preg_replace('/<\s*img[^>]+>/Ui', '', $text);
 

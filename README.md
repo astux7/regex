@@ -1,6 +1,6 @@
 Regex 
 =====
-
+http://rubular.com/ tool which helped me :-)
 some nice regex to extract info
 
 
@@ -29,8 +29,8 @@ some nice regex to extract info
   $text = preg_replace('/<span.*style="([^<]*696969+)"[^>]*>(.*?)<\/span>/im', "", $text);
 ```
 
-+ a => b, a => or a=> or b=>k string checker
++ a => b, a => or a=> or b=>k string checker with case insensitive
 
 ```
-(^[a-z]{1}\s?)(=>)(\s?[a-z]{1}?)
+/(^[a-z]{1}\s?)(=>)(\s?[a-z]{1}?)/i
 ```

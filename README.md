@@ -34,3 +34,8 @@ some nice regex to extract info
 ```
 /(^[a-z]{1}\s?)(=>)(\s?[a-z]{1}?)/i
 ```
+fixed second part empty or letter only (with or without space)
+
+```
+\(^[a-z]{1}\s{1}?)(=>)(|(\s{1}?[a-z]{1}?))$\
+```

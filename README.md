@@ -37,5 +37,5 @@ some nice regex to extract info
 fixed second part empty or letter only (with or without space)
 
 ```
-\(^[a-z]{1}\s{1}?)(=>)(|(\s{1}?[a-z]{1}?))$\
+/(^[a-z]{1}\s{1}?)(=>)(|(\s{1}?[a-z]{1}?))$/i
 ```

@@ -31,4 +31,6 @@ some nice regex to extract info
 
 + a => b, a => or a=> or b=>k string checker
 
-```(^[a-z]{1}\s?)(=>)(\s?[a-z]{1}?)```
+```
+(^[a-z]{1}\s?)(=>)(\s?[a-z]{1}?)
+```

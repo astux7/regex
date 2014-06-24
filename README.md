@@ -28,3 +28,7 @@ some nice regex to extract info
 
   $text = preg_replace('/<span.*style="([^<]*696969+)"[^>]*>(.*?)<\/span>/im', "", $text);
 ```
+
++ a => b, a => or a=> or b=>k string checker
+
+```(^[a-z]{1}\s?)(=>)(\s?[a-z]{1}?)```

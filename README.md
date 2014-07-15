@@ -39,3 +39,13 @@ fixed second part empty or letter only (with or without space)
 ```
 /(^[a-z]{1}\s{1}?)(=>)(|(\s{1}?[a-z]{1}?))$/i
 ```
+
+Youtube and Vimeo 
+
+```
+/(https?:\/\/)?(www.)?(youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/watch\?feature=player_embedded&v=)([A-Za-z0-9_-]*)(\&\S+)?(\?\S+)?/
+```
+
+```
+/https?:\/\/(www.)?vimeo\.com\/([A-Za-z0-9._%-]*)((\?|#)\S+)?/
+```

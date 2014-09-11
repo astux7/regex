@@ -52,5 +52,5 @@ Youtube and Vimeo
 
 Email validation
 ```
-/\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/
+/\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i/
 ```

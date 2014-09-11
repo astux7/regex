@@ -49,3 +49,8 @@ Youtube and Vimeo
 ```
 /https?:\/\/(www.)?vimeo\.com\/([A-Za-z0-9._%-]*)((\?|#)\S+)?/
 ```
+
+Email validation
+```
+/\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/
+```

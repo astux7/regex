@@ -9,6 +9,12 @@ some nice regex to extract info
 /<li>(.*?)<\/li>/i
 ```
 
++ Get full json bit with "patern" interpolation i.e. `{"patern": "test"}`
+```ruby
+/{"patern":.*?"(.*?)"}/i
+
+```
+
 + Extracting data from RRS feed (link path, images ...)
 ```php
   preg_match_all('#<\s*img [^\>]*src\s*=\s*(["\'])((.*?))\1#im', $text, $fromimg);

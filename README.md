@@ -1,7 +1,21 @@
 Regex 
 =====
 http://rubular.com/ tool which helped me :-)
-some nice regex to extract info
+
+https://regex101.com this is really good online regex page
+
+Some nice regex to extract info
+
++ Recursive Regex to grab nested curly brackets parent stuff i.e. 
+text -> `test {{test {test}} test test {test{test}}}` 
+results -> `{{test {test}} test test {test{test}}}`
+```ruby
+/\{ (?: [^{}]+ | (?R) )*+ \}/xmig
+```
+or
+```ruby
+/(?=\{)(?=((?:(?=.*?\{(?!.*?\2)(.*\}(?!.*\3).*))(?=.*?\}(?!.*?\3)(.*)).)+?.*?(?=\2)[^{]*(?=\3$)))/xmig
+```
 
 
 + Extract data from HTML list li elements

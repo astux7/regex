@@ -74,3 +74,13 @@ Email validation
 ```
 /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i/
 ```
+
+
+URL 
+
+if you would like to confirm that url pattern is expected and grab last bit after placeholder 
+i.e. url to match and result is 'https://buy.com/app/prefix/order/53534534" and want to get "order/53534534"
+```
+\^https?:\/\/(www\.)?buy.com\/app\/prefix\/([^&]*)\gm
+
+```
